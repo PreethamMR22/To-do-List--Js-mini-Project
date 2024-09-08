@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*,
+*:before,
+*:after {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    height :300vh;
+    background:linear-gradient(
+        135deg,
+        #8052ec,
+        #d161ff
+    );
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    position:fixed;
+    line-height: 5rem;
+    color:white;
+    font-size:6rem;
+    margin-top:1.5rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+.container {
+    position:sticky;
+   margin-top:10rem;
+    border:1px solid white;
+    width:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:30px 40px;
+    border-radius:15px;
+    max-height: calc(100vh - 120px);
+    background-color:rgba(176, 176, 176, 0.226);
+    backdrop-filter: blur(55px);
+    overflow-y:auto;
+    overflow-x: auto;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.318);
+}
+.addtask {
+    background-color:white;
+    padding:30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.312) ;
+}
+.addtask input {
+    height:rem;
+    width:80%;
+    padding:1rem;
+    border-radius:10px;
+    font-size:16px;
+    font-family:'poppins',sans-serif;
+    border:1px solid rgba(0, 0, 0, 0.345);
+&:focus {
+    outline:none;
+    border-color:#8052ec;
+}
+&:hover {
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.236);
+    transition:0.5s;
+}
+}
+.addtask button {
+    height:3.2rem;
+    width:4.5rem;
+    margin-left:1.3rem;
+    border-radius:10px;
+    border:none;
+    color:white;
+    font-size:16px;
+    background-color:#8052ec;
+    font-weight: 700;
+
+    &:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.279);
+
+        border:#8052ec 1px solid;
+        transition:0.3s;
+    }
+}
+#tasks {
+    background-color:white;
+   padding:30px 20px;
+   margin-top:40px;
+   font-size:19px;
+   font-family: 'poppins',sans-serif;
+   border-radius:10px;
+   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.378);
+   
+    
+}
+
+.addText {
+    background-color:white;
+    padding:30px 20px;
+    margin-top:40px;
+    font-size:19px;
+    font-family: 'poppins',sans-serif;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid black;
+}
+
+.task {
+    background-color: #ffffff;
+    height: 50px;
+    width:40rem;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* /* align-items: center; */
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+    
+}
+.task span {
+    font-family: 'poppins',sans-serif;
+    font-size:20px;
+    font-weight:400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.task button {
+    border:none;
+    background-color: white;
+    height:rem;
+    width:2.5rem;
+    filter:invert();
+    background-color: #ece952b7;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow:2px 2px 3px rgba(255, 255, 255, 0.422);
+      transition:0.2s;
+    }
+}
+.completed{
+    text-decoration: line-through;
+    background-color: rgba(2, 250, 2, 0.355);
+    border-radius:10px;
+}
